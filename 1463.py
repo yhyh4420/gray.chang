@@ -7,15 +7,15 @@
 """
 N = int(input())
 
-dp = [0]*N
-for i in range(1, N):
+dp = [0]*(N+1)
+for i in range(2, N+1):
     dp[i] = dp[i-1] + 1 # 하나씩 뺄 경우
     if i%2 ==0:
         dp[i] = min(dp[i], dp[i//2]+1)
     if i%3==0:
         dp[i] = min(dp[i], dp[i//3]+1)
 
-print(dp[-1])
+print(dp[N])
 """
 list를 활용한 dp라는 것까지는 맞았으나, 리스트를 사용하는 방식이 틀렸다.
 이번 문제의 경우 size가 N인 리스트를 사용하여 각 인덱스에 도달하는 최적의 숫자를 찾는 방식으로 진행한다.
