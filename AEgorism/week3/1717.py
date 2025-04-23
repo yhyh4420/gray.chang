@@ -1,5 +1,3 @@
-from encodings.rot_13 import rot13
-
 n,m = map(int, input().split())
 
 sets = {}
