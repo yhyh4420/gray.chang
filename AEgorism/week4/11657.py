@@ -22,9 +22,9 @@ def bellman(start):
     for i in range(V):
         for start, end, weight in graph:
             if dist[start] != INF and dist[start] + weight < dist[end]:
-                dist[end] = dist[start] + weight
                 if i == V-1: # 여기가 핵심. V번째에도 찾은거니까 이건 무한루프 도는거임
                     return True, []
+                dist[end] = dist[start] + weight
     return False, dist
 
 is_circluar, dist = bellman(1)
