@@ -36,7 +36,7 @@ def backtracking():
                         mark(i,j,size,0)
                         backtracking()
                         mark(i,j,size,1)
-                    return
+                return
     MIN = min(25-sum(papers), MIN)
 
 backtracking()
