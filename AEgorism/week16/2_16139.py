@@ -1,9 +1,10 @@
 import sys
-input = sys.stdin.readline
 
-string = input().strip()
+data = sys.stdin.read().splitlines()
+
+string = data[0].strip()
 length = len(string)
-q = int(input())
+q = int(data[1])
 
 memory = {}
 memory_keys = set(string)
@@ -21,7 +22,7 @@ for key in memory_keys:
 def solution(c, start, end):
     return memory[c][end+1]-memory[c][start]
 
-lines = sys.stdin.read().splitlines()
+lines = data[2:]
 
 for line in lines:
     alphabet, s, e = line.split()
