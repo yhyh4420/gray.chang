@@ -1,0 +1,1 @@
+{"name":"Local: S2_18126","url":"/Users/chang-yehun/PycharmProjects/PythonProject/gray.chang/sparta/S2_18126.py","tests":[{"id":1754530591182,"input":"4\n1 2 3\n2 3 2\n2 4 4","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/chang-yehun/PycharmProjects/PythonProject/gray.chang/sparta/S2_18126.py","group":"local","local":true}
